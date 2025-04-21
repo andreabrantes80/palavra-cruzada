@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jogo de Palavras Cruzadas</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container-jogo">
+      <div id="info-nivel">
+        <span id="moedas">💰<span id="total-moedas">0</span></span>
+        <span id="nivel">Nível: <span id="nivel-atual">1</span></span>
+      </div>
+      <div>
+        <!-- Este 'div' é um contêiner genérico que envolve o
+                    título do jogo. -->
+
+        <h1>Jogo de Palavras Cruzadas</h1>
+        <!-- A tag <h1> é usada aqui para o título do jogo,
+                        que é importante para a acessibilidade e SEO,
+                        pois informa aos usuários e aos mecanismos de
+                        pesquisa sobre o conteúdo principal da página. -->
+      </div>
+
+      <div id="conteudo-jogo">
+        <div id="grade-palavras"></div>
+
+        <div id="circulo-letras">
+          <canvas id="linha-conexao"></canvas>
+        </div>
+      </div>
+
+      <div id="mensagem"></div>
+
+      <button id="botao-dica">Dica</button>
+
+      <div id="modal-dica">
+        <div id="palavras-dica"></div>
+        <button id="fechar-dica">Fechar</button>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

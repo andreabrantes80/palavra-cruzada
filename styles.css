@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #87cefa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+#container-jogo {
+  width: 1200px;
+  border: 2px solid #388e3c;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#info-nivel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#conteudo-jogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+#grade-palavras {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.linha-palavra {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.celula-palavra {
+  width: 60px;
+  height: 60px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.celula-palavra.vazio {
+  background-color: #e0e0e0;
+  border: 2px solid #388e3c;
+}
+.celula-palavra.preenchido {
+  background-color: #ff4081;
+  color: #fff;
+}
+/* #circulo-letras {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background-color: #fffb7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#circulo-letras div {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #ff4081;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #388e3c;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#circulo-letras div.selecionado {
+  background-color: #ffeb3b;
+}
+#linha-conexao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#mensagem {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+#botao-dica {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3b18ac;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+#botao-dica:hover {
+  background-color: #2e7d32;
+}
+
+#modal-dica {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #388e3c;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+#modal-dica button {
+  margin: 10px 20px;
+  background-color: #388e3c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+
+}
+#modal-dica button:hover {
+  background-color: #2e7d32;
+}
+
+/* Media Query para telas menores (celulares e tablets) */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 10px;
+  }
+
+  #container-jogo {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #info-nivel {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  #conteudo-jogo {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #grade-palavras {
+    margin-right: 0;
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+
+  .linha-palavra {
+    gap: 3px;
+  }
+
+  .celula-palavra {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #mensagem {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  #botao-dica {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+
+  #modal-dica {
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  #modal-dica button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px 10px;
+  }
+}
