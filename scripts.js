@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       palavras: ["CASA", "APARTAMENTO", "SALA", "COZINHA"],
-      letras: "CASAAPARTAMENTOSZLHI",
+      letras: "CASAAPARTAMENTOSLCZNH",
     },
     {
       palavras: ["ESCOLA", "FACULDADE", "CURSO", "AULA"],
@@ -105,8 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     { palavras: ["BANANA", "MAÇÃ", "UVA", "LARANJA"], letras: "BANAMUVALARJÇ" },
     {
-      palavras: ["VIAGEM", "FERIAS", "PASSPORT", "AVIÃO"],
-      letras: "VIAGMFERIPASOTAVI",
+      palavras: ["VIAGEM", "FERIAS", "PASSPORT", "AVIAO"],
+      letras: "VIAGMFERIPASOTAVIO",
     },
   ];
 
