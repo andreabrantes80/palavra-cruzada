@@ -188,20 +188,41 @@ body {
     margin-top: 10px;
   }
 
+  /* #grade-palavras {
+    margin-right: 0;
+    margin-bottom: 20px;
+    gap: 5px;
+  } */
+
   #grade-palavras {
     margin-right: 0;
     margin-bottom: 20px;
     gap: 5px;
+    width: 100%; /* Garante que a grade ocupe a largura total do container */
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    box-sizing: border-box;
   }
+
+  /* .linha-palavra {
+    gap: 3px;
+  } */
 
   .linha-palavra {
-    gap: 3px;
+    gap: 2px; /* Reduz o espaço entre as células */
+    flex-wrap: wrap; /* Permite que as células quebrem para a próxima linha */
+    justify-content: flex-start; /* Alinha as células à esquerda para melhor organização */
   }
 
-  .celula-palavra {
+  /* .celula-palavra {
     width: 40px;
     height: 40px;
     font-size: 16px;
+  } */
+   .celula-palavra {
+    width: 30px; /* Reduzido de 40px para 30px para caber mais células */
+    height: 30px;
+    font-size: 12px; /* Reduzido para manter proporção */
+    border-radius: 3px; /* Ajusta o border-radius proporcionalmente */
   }
 
   #mensagem {

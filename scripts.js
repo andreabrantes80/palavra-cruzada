@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       palavras: ["CASA", "APARTAMENTO", "SALA", "COZINHA"],
-      letras: "CASAAPARTAMENTOSLCZNH",
+      letras: "CASAAPARTAMENTOSLCZNHI",
     },
     {
       palavras: ["ESCOLA", "FACULDADE", "CURSO", "AULA"],
