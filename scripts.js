@@ -293,8 +293,12 @@ document.addEventListener("DOMContentLoaded", () => {
     nivelAtual += 1;
     localStorage.setItem("pontos", pontos);
     localStorage.setItem("nivelAtual", nivelAtual);
+
+    const levelUpSound = new Audio("Crowd_Cheering.wav");
+
     if (nivelAtual < niveis.length) {
       carregarNivel();
+      levelUpSound.play();
     } else {
       mensagem.textContent = "Parabéns! Você completou todos os níveis!";
     }
@@ -312,7 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
     letrasSelecionadas = "";
   }
 
-  //parei em 42 m aula 387 parte 2
+
 
   carregarNivel();
 
