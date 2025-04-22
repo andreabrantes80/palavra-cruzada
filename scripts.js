@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mensagem.textContent = "Parabéns! Você completou todos os níveis!";
     }
     totalMoedas.textContent = pontos;
-    nivelAtualElement.textContent = `Nível: ${nivelAtual + 1}`;
+    nivelAtualElement.textContent = `${nivelAtual + 1}`;
   }
 
   function carregarNivel() {
