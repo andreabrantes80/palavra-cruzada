@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
     circulo.style.borderRadius = "50%";
     circulo.style.position = "relative";
     circulo.style.backgroundColor = "#81c784";
+    circulo.style.marginBottom = "8px"; // Adiciona margem inferior de 8px
 
     circuloLetras.appendChild(circulo);
 
