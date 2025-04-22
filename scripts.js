@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const palavrasDica = document.getElementById("palavras-dica");
   const fecharDica = document.getElementById("fechar-dica");
   totalMoedas.textContent = pontos;
-  nivelAtualElement.textContent = `Nível: ${nivelAtual + 1}`;
+  nivelAtualElement.textContent = `${nivelAtual + 1}`;
   let timer;
   let letrasSelecionadas = "";
   let celulasSelecionadas = [];
