@@ -217,8 +217,8 @@ document.addEventListener("DOMContentLoaded", () => {
       celula.style.transition = "background-color 0.3s";
 
       celula.addEventListener("click", (event) => {
-        selecionarLetra(event);
         clickSound.play();
+        selecionarLetra(event);
       });
 
       circulo.appendChild(celula);
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         carregarNivel();
 
-      }, 3000);
+      }, 5000);
     } else {
       mensagem.textContent = "Parabéns! Você completou todos os níveis!";
     }
