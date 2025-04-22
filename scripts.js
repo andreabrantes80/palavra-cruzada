@@ -185,6 +185,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const radius = Math.min(maxRadius, minRadius + numLetters * 5);
     const angleStep = (2 * Math.PI) / numLetters;
 
+    // Criar o objeto de áudio
+    const clickSound = new Audio("Push_Button_1.wav");
+
     letras.split("").forEach((letra, index) => {
       const angle = index * angleStep;
       const x =
@@ -213,7 +216,10 @@ document.addEventListener("DOMContentLoaded", () => {
       celula.style.border = "2px solid #038e3c";
       celula.style.transition = "background-color 0.3s";
 
-      celula.addEventListener("click", selecionarLetra);
+      celula.addEventListener("click", () => {
+        clickSound.play();
+        selecionarLetra();
+      });
 
       circulo.appendChild(celula);
     });
