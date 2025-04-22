@@ -185,7 +185,8 @@ body {
   #conteudo-jogo {
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   /* #grade-palavras {
@@ -227,7 +228,8 @@ body {
 
   #mensagem {
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   #botao-dica {
