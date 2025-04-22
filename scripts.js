@@ -216,9 +216,9 @@ document.addEventListener("DOMContentLoaded", () => {
       celula.style.border = "2px solid #038e3c";
       celula.style.transition = "background-color 0.3s";
 
-      celula.addEventListener("click", () => {
+      celula.addEventListener("click", (event) => {
+        selecionarLetra(event);
         clickSound.play();
-        selecionarLetra();
       });
 
       circulo.appendChild(celula);
