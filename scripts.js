@@ -297,9 +297,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const levelUpSound = new Audio("Crowd_Cheering.wav");
 
     if (nivelAtual < niveis.length) {
-      carregarNivel();
       mensagem.textContent = `Parabéns! Você avançou para o nível ${nivelAtual + 1}`;
       levelUpSound.play();
+
+      setTimeout(() => {
+        carregarNivel();
+
+      }, 3000);
     } else {
       mensagem.textContent = "Parabéns! Você completou todos os níveis!";
     }
