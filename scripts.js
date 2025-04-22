@@ -298,6 +298,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (nivelAtual < niveis.length) {
       carregarNivel();
+      mensagem.textContent = `Parabéns! Você avançou para o nível ${nivelAtual + 1}`;
       levelUpSound.play();
     } else {
       mensagem.textContent = "Parabéns! Você completou todos os níveis!";
